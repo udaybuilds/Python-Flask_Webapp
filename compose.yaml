@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  uday-flask:
+    image: uday-app-from-compose
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uday-app-from-compose
+    ports:
+    - 3124:5000 
